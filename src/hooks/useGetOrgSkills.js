@@ -13,7 +13,7 @@ export const useGetOrganisationSkills = () => {
         setError(null);
         console.log("user organisation id: ", organisation_id);
 
-        const response = await fetch('https://fyp-backup-test.herokuapp.com/api/organisation/getOrganisationSkills', {
+        const response = await fetch('https://fyp22s432.herokuapp.com/api/organisation/getOrganisationSkills', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json',
                        'Authorization': `Bearer ${user.token}`

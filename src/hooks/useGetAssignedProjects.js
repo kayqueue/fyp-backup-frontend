@@ -14,7 +14,7 @@ export const useGetAssignedProjects = () => {
         setIsLoading(true)
         setError(null)
 
-        const response = await fetch('https://fyp-backup-test.herokuapp.com/api/project/assignedProjects', {
+        const response = await fetch('https://fyp22s432.herokuapp.com/api/project/assignedProjects', {
             method: 'GET',
             headers: {'Content-Type': 'application/json'}
         })

@@ -50,7 +50,7 @@ const AssignmentDetails = () => {
     }, [setAssignment, user, id])
 
     const fetchAssignment = async () => {
-        const response = await fetch('https://fyp-backup-test.herokuapp.comhttps://fyp-backup-test.herokuapp.com/api/assignment/' + id, { // fetch the assignment based on the assignment's id
+        const response = await fetch('https://fyp-backup-test.herokuapp.comhttps://fyp22s432.herokuapp.com/api/assignment/' + id, { // fetch the assignment based on the assignment's id
             headers: {
                 'Authorization': `Bearer ${ user.token }` // sends authorisation header with the user's token -> backend will validate token -> if valid, grant access to API
             }

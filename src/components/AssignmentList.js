@@ -19,7 +19,7 @@ const AssignmentList = ({ assignment }) => {
     const handleClick = async (e) => {
         e.preventDefault()
 
-        const response = await fetch('https://fyp-backup-test.herokuapp.com/api/assignment/' + assignment._id, {
+        const response = await fetch('https://fyp22s432.herokuapp.com/api/assignment/' + assignment._id, {
             method: 'DELETE',
             headers: {
                 'Authorization': `Bearer ${ user.token }`

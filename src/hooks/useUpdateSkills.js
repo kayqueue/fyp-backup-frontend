@@ -14,7 +14,7 @@ export const useUpdateSkills = () => {
         setIsLoading(true)  
         setError(null) 
 
-        const response = await fetch('https://fyp-backup-test.herokuapp.com/api/user/updateSkill', {
+        const response = await fetch('https://fyp22s432.herokuapp.com/api/user/updateSkill', {
             method: 'POST',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({email, skills})

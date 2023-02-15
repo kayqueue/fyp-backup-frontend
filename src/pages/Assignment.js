@@ -15,7 +15,7 @@ const Assignment = () => {
     
     useEffect(() => {
         const fetchAssignment = async () => {
-            const response = await fetch('https://fyp-backup-test.herokuapp.com/api/assignment', {
+            const response = await fetch('https://fyp22s432.herokuapp.com/api/assignment', {
                 headers: {
                     'Authorization': `Bearer ${ user.token }` // sends authorisation header with the user's token -> backend will validate token -> if valid, grant access to API
                 }

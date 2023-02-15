@@ -14,7 +14,7 @@ export const useGetAllUsers = () => {
         setIsLoading(true)  
         setError(null) 
 
-        const response = await fetch('https://fyp-backup-test.herokuapp.com/api/user/allProfile', {
+        const response = await fetch('https://fyp22s432.herokuapp.com/api/user/allProfile', {
             method: 'GET',
             headers: {'Content-Type': 'application/json'}
         })
