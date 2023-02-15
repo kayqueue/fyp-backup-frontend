@@ -16,7 +16,7 @@ export const useSignup = () => {
         setError(null) // reset error to null in case there was one previously
 
         // fetch function calls the endpoint in the backend server
-        const response = await fetch('/api/user/signup', {
+        const response = await fetch('https://fyp-backup-test.herokuapp.com/api/user/signup', {
             method: 'POST',
             headers: {'Content-Type': 'application/json'}, // type of the data
             body: JSON.stringify({name, email, password, confirmPassword, role, organisation_id}) // sends {name,email, password, role} as the request body

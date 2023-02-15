@@ -16,7 +16,7 @@ export const useChangePassword = () => {
         setIsLoading(true)  
         setError(null) 
  
-        const response = await fetch('/api/user/changePassword', {
+        const response = await fetch('https://fyp-backup-test.herokuapp.com/api/user/changePassword', {
             method: 'POST',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({email, currentPassword, newPassword, confirmPassword})

@@ -15,7 +15,7 @@ export const useUpdateInfo = () => {
         setIsLoading(true)  
         setError(null) 
 
-        const response = await fetch('/api/user/updateInfo', {
+        const response = await fetch('https://fyp-backup-test.herokuapp.com/api/user/updateInfo', {
             method: 'POST',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({email, contact})
